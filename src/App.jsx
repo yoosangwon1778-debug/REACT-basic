@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
 
+import './App.css'
+import Header from './components/Header'
+import Aside from './components/Aside'
+import Main from './components/Main'
+import Footer from './components/Footer'
 function App() {
   
   return (
-    <div>
-      <h1>Hello React!</h1>
+    <div className='container'>
+      <Header/>
+      <div className="content">
+        <Aside/>
+        <Main/>
+      </div>
+      <Footer/>
     </div>
   )
 }
