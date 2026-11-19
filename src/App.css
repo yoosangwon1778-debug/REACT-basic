@@ -1,0 +1,58 @@
+.container {
+    background-color: #eee;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:10px
+}
+.container > *{
+    /* flex: 1; */
+    padding:20px 0;
+    color:#fff
+}
+header {
+    background-color: red;
+}
+nav{
+    background-color: skyblue;
+}
+.content {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+        "section aside"
+        "article aside"
+    ;
+    gap:10px;
+
+}
+section {
+    grid-area: section;
+    background-color: blue;
+    padding: 10px;
+}
+section ul {
+  display: flex;
+  gap: 10px;
+}
+section ul li {
+  flex: 1;
+  background-color: #eee;
+  color: black;
+
+}
+article {
+    grid-area: article;
+    background-color: orange;
+}
+
+aside {
+    grid-area: aside;
+    background-color: gray;
+}
+footer {
+    background-color: rgb(255, 111, 0);
+}
