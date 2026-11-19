@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
 
+import './App.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Section from './components/Section'
+import Main from './components/Main'
 function App() {
-  
+  const getGreeting=(name)=>`안녕 ${name}`
   return (
-    <div>
+    <main>
+      <Header/>
+      <Main/>
+      <Section/>
       <h1>Hello React!</h1>
-    </div>
+      <p>{getGreeting('Alice')}</p>
+      <Footer/>
+    </main>
   )
 }
 
