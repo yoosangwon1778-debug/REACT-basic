@@ -8,7 +8,7 @@ const Aside = () => {
         <ul>
             {links.map((link)=>(
                 <li key={link}>
-                    links
+                    <a href="#">links</a> {/* Claude 수정: 링크 목록이라 a로 감쌈 */}
                 </li>
             ))}
         </ul>

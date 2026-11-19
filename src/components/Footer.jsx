@@ -15,7 +15,7 @@ const Footer = () => {
         <ul>
             {menus.map((menu)=>(
                 <li key={menu.id}>
-                    {menu.name}
+                    <a href="#">{menu.name}</a> {/* Claude 수정: 메뉴는 링크라 a로 감쌈 */}
                 </li>
             ))}
         </ul>
