@@ -6,7 +6,7 @@
 body {
     background-color: #b7e8fe;
 }
-a { /* Claude 수정: a 기본 파란 글자 · 밑줄 풀기 → 부모 글자색 그대로 */
+a {
     color: inherit;
     text-decoration: none;
 }
