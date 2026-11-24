@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
 
+import './App.css'
+import Square from './components/Square'
+import SortTableList from './components/SortTableList'
+import PeopleList from './components/PeopleList'
 function App() {
   
   return (
     <div>
-      <h1>Hello React!</h1>
+      {/* <Square/> */}
+      <SortTableList/>
+      <PeopleList/>
     </div>
   )
 }
