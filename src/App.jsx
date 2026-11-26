@@ -1,14 +1,17 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
 
+import './App.css'
+import UserList from './components/UserList'
+import TodoList from './components/TodoList'
+import UserDetail from './components/UserDetail'
+import DummyCart from './components/DummyCart'
+import DummyRecipes from './components/DummyRecipes'
 function App() {
   
   return (
     <div>
-      <h1>Hello React!</h1>
+      <DummyRecipes/>
+      {/* <UserDetail/> */}
+      {/* <DummyCart/> */}
     </div>
   )
 }
